@@ -1,0 +1,1952 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книги Кармен Мола</title>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #D8D8D8;
+    background-color: #111111;
+    background-image: url("фон.png");
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+td {
+    padding: 10px;
+    color: #D8D8D8;
+}
+
+th {
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #9E4A4A;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    margin: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 42px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    border: 2px solid #9E4A4A;
+}
+
+a {
+    color: #E5A0A0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav-table {
+    width: 90%;
+    padding: 5px;
+    background-color: #111111;
+    border: 1px solid #5A2F2F;
+}
+
+.nav-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.content-table {
+    background-color: #171717;
+    border: 1px solid #5A2F2F;
+}
+
+.book-section {
+    width: 80%;
+    padding: 25px;
+    background-color: rgba(23, 23, 23, 0.9);
+    border: 1px solid #5A2F2F;
+}
+
+.book-title {
+    margin: 10px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: normal;
+    text-align: left;
+}
+
+.book-text {
+    color: #D8D8D8;
+    font-size: 22px;
+    line-height: 1.55;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: justify;
+}
+
+.book-cover {
+    width: 350px;
+    height: auto;
+    margin: 5px 20px 5px 0;
+    padding: 2px;
+    border: 2px solid #9E4A4A;
+}
+
+.review-table {
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #5A2F2F;
+}
+
+.review-card {
+    padding: 20px;
+    background-color: #171717;
+    border: 1px solid #6E3A3A;
+    text-align: center;
+}
+
+.review-text {
+    color: #D8D8D8;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: left;
+}
+
+.rating {
+    color: #B04A9A;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.book-table {
+    width: 95%;
+    background-color: #171717;
+    border: 2px solid #9E4A4A;
+}
+
+.form-table {
+    width: 70%;
+    padding: 15px;
+    background-color: #171717;
+    border: 2px solid #9E4A4A;
+}
+
+.form-table td {
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.section-heading {
+    margin: 10px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.accent-link {
+    color: #E5A0A0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.characters-table {
+    width: 90%;
+    padding: 12px;
+    background-color: #111111;
+    border: 1px solid #5A2F2F;
+}
+
+
+#page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+#mainContent {
+    color: #D8D8D8;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#navigation {
+    color: #FFFFFF;
+    background-color: #171717;
+    padding: 10px;
+    border-right: 2px solid #9E4A4A;
+}
+
+#characters {
+    color: #FFFFFF;
+    background-color: #171717;
+    padding: 10px;
+    border-left: 2px solid #9E4A4A;
+}
+
+#authorization {
+    margin-top: 20px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+
+a:link {
+    color: #E5A0A0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #C78383;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #B04A4A;
+    text-decoration: underline;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #2A2020;
+    color: #FFFFFF;
+    border: 2px solid #E5A0A0;
+}
+
+
+.book-text:first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #E5A0A0;
+}
+
+.book-text:first-line {
+    font-weight: bold;
+}
+
+.review-text:first-letter {
+    color: #E5A0A0;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 260px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #9E4A4A;
+    background-color: #222222;
+    color: #FFFFFF;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    padding: 8px 16px;
+    border: 1px solid #E5A0A0;
+    background-color: #9E4A4A;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #B04A4A;
+    color: #FFFFFF;
+}
+
+a[target="_blank"] {
+    font-style: italic;
+}
+
+img[alt] {
+    background-color: #171717;
+}
+
+
+
+#navigation a {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+#characters font {
+    color: #D8D8D8;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.book-table font {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+#mainContent > table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navigation > center {
+    padding: 5px;
+}
+
+#characters > center {
+    padding: 5px;
+}
+
+.review-table > tbody > tr > td {
+    border: 1px solid #6E3A3A;
+}
+
+
+.book-table th,
+.form-table td.form-title {
+    background-color: #9E4A4A;
+    color: #FFFFFF;
+}
+
+.book-table td {
+    border: 1px solid #5A2F2F;
+}
+
+textarea {
+    width: 300px;
+    height: 110px;
+    padding: 6px;
+    border: 1px solid #9E4A4A;
+    background-color: #222222;
+    color: #FFFFFF;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.4;
+}
+
+select {
+    min-width: 220px;
+    padding: 5px;
+    border: 1px solid #9E4A4A;
+    background-color: #222222;
+    color: #FFFFFF;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+::selection {
+    background-color: #9E4A4A;
+    color: #FFFFFF;
+}
+
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#page {
+    width: 100%;
+    height: 100vh;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+#page > tbody > tr > td {
+    height: 100vh;
+    padding: 0;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#navigation { width: 230px; }
+#characters { width: 250px; }
+
+.scroll-column,
+.scroll-main {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.scroll-column { padding: 10px; }
+.scroll-main { padding: 0 8px 20px; }
+
+.scroll-column::-webkit-scrollbar,
+.scroll-main::-webkit-scrollbar { width: 9px; }
+.scroll-column::-webkit-scrollbar-track,
+.scroll-main::-webkit-scrollbar-track { background: #171717; }
+.scroll-column::-webkit-scrollbar-thumb,
+.scroll-main::-webkit-scrollbar-thumb {
+    background-color: #9E4A4A;
+    border: 2px solid #171717;
+}
+
+
+.fly-link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0;
+    background-color: transparent;
+    background-image: none;
+}
+
+.fly {
+    display: inline-block;
+    width: 52px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.fly-top { width: 76px; margin: 0 14px 0 8px; vertical-align: middle; transform: rotate(-8deg); }
+.fly-top:hover { transform: rotate(-8deg) scale(1.12); }
+.fly-1 { width: 58px; margin: 5px 15px; transform: rotate(17deg); }
+.fly-1:hover { transform: rotate(17deg) scale(1.12); }
+.fly-2 { width: 62px; margin: 5px 8px 5px 15px; transform: rotate(-21deg); }
+.fly-2:hover { transform: rotate(-21deg) scale(1.12); }
+.fly-3 { width: 54px; margin: 8px 18px; transform: rotate(29deg); }
+.fly-3:hover { transform: rotate(29deg) scale(1.12); }
+.fly-4 { width: 64px; margin: 5px 10px; transform: rotate(-13deg); }
+.fly-4:hover { transform: rotate(-13deg) scale(1.12); }
+.fly-5 { width: 56px; margin: 10px 20px 5px 8px; transform: rotate(24deg); }
+.fly-5:hover { transform: rotate(24deg) scale(1.12); }
+.fly-6 { width: 60px; margin: 5px 12px; transform: rotate(-30deg); }
+.fly-6:hover { transform: rotate(-30deg) scale(1.12); }
+
+.main-title { display: inline-block; vertical-align: middle; }
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    box-sizing: border-box;
+}
+
+.book-table,
+.review-table,
+.form-table,
+.content-table,
+.characters-table,
+.nav-table {
+    max-width: 100%;
+}
+
+.book-cover {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 801px) {
+    html,
+    body {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #page {
+        display: block;
+        width: 100%;
+        height: auto;
+        table-layout: auto;
+        border-spacing: 0;
+    }
+
+    #page > tbody,
+    #page > tbody > tr {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #page > tbody > tr > td,
+    #navigation,
+    #mainContent,
+    #characters {
+        display: block;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        min-width: 0;
+        padding: 10px;
+        overflow: visible;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #9E4A4A;
+    }
+
+    .scroll-column,
+    .scroll-main {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        padding: 8px;
+    }
+
+    /* На узком экране навигация располагается первой */
+    #mainContent {
+        order: 1;
+    }
+
+    #navigation {
+        order: 2;
+    }
+
+    #characters {
+        order: 3;
+    }
+
+    #page > tbody > tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        max-width: 100%;
+    }
+
+    .book-table,
+    .review-table,
+    .form-table,
+    .content-table,
+    .characters-table,
+    .nav-table {
+        width: 100% !important;
+        table-layout: fixed;
+    }
+
+    td,
+    th {
+        overflow-wrap: anywhere;
+        word-break: normal;
+        padding: 7px;
+    }
+
+    .book-cover {
+        width: 100%;
+        max-width: 350px;
+        margin: 5px auto;
+    }
+
+    .book-title,
+    h1 {
+        font-size: clamp(24px, 7vw, 36px);
+        overflow-wrap: anywhere;
+    }
+
+    .book-text {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form-table td {
+        width: auto;
+    }
+
+    .form-table input[type="submit"],
+    .form-table input[type="reset"] {
+        margin: 4px;
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+
+    #mainContent font[size="3"] {
+        font-size: 14px !important;
+    }
+
+    #mainContent font[size="4"] {
+        font-size: 16px !important;
+    }
+
+    #mainContent font[size="5"] {
+        font-size: 20px !important;
+    }
+
+    #mainContent font[size="6"] {
+        font-size: 25px !important;
+    }
+
+    #navigation,
+    #mainContent,
+    #characters {
+        padding: 6px;
+    }
+
+    .scroll-column,
+    .scroll-main {
+        padding: 5px;
+    }
+
+    .book-text {
+        font-size: 16px;
+    }
+
+    .book-title,
+    h1 {
+        font-size: 25px;
+        margin: 8px 0;
+        padding: 5px;
+    }
+
+    .book-table,
+    .review-table,
+    .form-table {
+        border-spacing: 1px;
+        padding: 3px;
+    }
+
+    td,
+    th {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .fly-top {
+        width: 48px;
+        margin: 0 5px 0 0;
+    }
+
+    .fly-1,
+    .fly-2,
+    .fly-3,
+    .fly-4,
+    .fly-5,
+    .fly-6 {
+        max-width: 48px;
+    }
+}
+
+
+
+.book-title,
+h1,
+td,
+th,
+.book-text {
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+
+.book-title {
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+
+
+
+#page {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr) 250px;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: "navigation mainContent characters";
+    width: 100%;
+    height: 100vh;
+    border-spacing: 0;
+    table-layout: auto;
+}
+
+#page > tbody,
+#page > tbody > tr {
+    display: contents;
+}
+
+#navigation {
+    grid-area: navigation;
+    width: auto !important;
+    min-width: 0;
+}
+
+#mainContent {
+    grid-area: mainContent;
+    min-width: 0;
+}
+
+#characters {
+    grid-area: characters;
+    width: auto !important;
+    min-width: 0;
+}
+
+#page > tbody > tr > td {
+    height: 100vh;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 801px) {
+    #page {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "navigation"
+            "mainContent"
+            "characters";
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    #page > tbody,
+    #page > tbody > tr {
+        display: contents;
+        width: auto;
+        height: auto;
+    }
+
+    #page > tbody > tr > td,
+    #navigation,
+    #mainContent,
+    #characters {
+        display: block;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        min-width: 0;
+        padding: 10px;
+        overflow: visible;
+    }
+
+    #mainContent { grid-area: mainContent; }
+    #navigation { grid-area: navigation; }
+    #characters { grid-area: characters; }
+
+    .scroll-column,
+    .scroll-main {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        min-width: 0;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+<table id="page" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td id="navigation" width="230" valign="top">
+            <div class="scroll-column">
+			<head>
+    <meta charset="UTF-8">
+    <title>Навигация — Книги Кармен Мола</title>
+</head>
+
+<body bgcolor="#171717" text="white">
+
+<center>
+
+    <font color="white" size="5">
+        <b>НАВИГАЦИЯ</b>
+    </font>
+
+    <br><br>
+
+    <table class="nav-table" width="90%" cellpadding="8" cellspacing="3" bgcolor="#111111">
+
+            <td align="center">
+                <a href="#authors" target="main"><font color="#E5A0A0" size="4">ОБ АВТОРАХ</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#gypsy-bride" target="main"><font color="#E5A0A0" size="4">ЦЫГАНСКАЯ НЕВЕСТА</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#PurSet" target="main"><font color="#E5A0A0" size="4">ПУРПУРНАЯ СЕТЬ</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#malutka" target="main"><font color="#E5A0A0" size="4">МАЛЮТКА</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#mama" target="main"><font color="#E5A0A0" size="4">МОЛЧАНИЕ МАТЕРЕЙ</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#klan" target="main"><font color="#E5A0A0" size="4">КЛАН</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#books" target="main"><font color="#E5A0A0" size="4">КНИГИ ЦИКЛА</font></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="#authorization" target="main">
+                    <input type="button" value="АВТОРИЗОВАТЬСЯ">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="content-table" width="90%" cellpadding="12" cellspacing="3" bgcolor="#111111">
+        <tr>
+            <td align="center" bgcolor="#9E4A4A">
+                <font color="white" size="4"><b>О САЙТЕ</b></font>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top">
+                <font color="#D8D8D8" size="3">
+                    Информационный сайт о книгах Кармен Молы, авторах коллективного псевдонима и цикле об инспекторе Елене Бланко.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="content-table" width="90%" cellpadding="12" cellspacing="3" bgcolor="#111111">
+        <tr>
+            <td align="center" bgcolor="#9E4A4A">
+                <font color="white" size="4"><b>ССЫЛКА на автора в Читай-городе</b></font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="https://www.chitai-gorod.ru/search?phrase=%D0%BA%D0%B0%D1%80%D0%BC%D0%B5%D0%BD+%D0%BC%D0%BE%D0%BB%D0%B0" target="_blank">
+                    <font color="#E5A0A0" size="3">Читай-город</font>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</center>
+
+</body>
+        </td>
+        <td id="mainContent" valign="top">
+            <div class="scroll-main">
+           <head>
+    <meta charset="UTF-8">
+    <title>Книги Кармен Мола</title>
+</head>
+
+<body background="фон.png" bgproperties="fixed" bgcolor="#111111" text="white">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+
+    <tr>
+        <td colspan="2" bgcolor="#171717" align="center" valign="middle" height="90">
+<a name="top"></a>
+            <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Вернуться в начало" class="fly fly-top"></a>
+            <h1 class="main-title">
+        <font color="white" size="6">
+            КАРМЕН МОЛА
+        </font>
+            </h1>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" valign="top" align="center">
+<br><br>
+<a name="authors"></a>
+
+    <img class="author-image" src="кармен мола.png" width="500" alt="Писатели">
+
+    <br><br>
+
+    <font color="white" size="6">
+        <b>ОБ АВТОРАХ</b>
+    </font>
+    <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Муха" class="fly fly-1"></a>
+
+    <br><br>
+
+    <font class="book-text" color="#D8D8D8" size="5">
+        Кармен Мола — коллективный псевдоним трёх испанских писателей и сценаристов: Хорхе Диаса, Антонио Мерсеро и Агустина Мартинеса. 
+        Трое друзей-сценаристов объединились для написания криминальных триллеров в 2017 году. Их первый роман под псевдонимом Кармен Мола — «Цыганская невеста» — вышел в 2018 году. 
+        До 2021 года издатель и литературный агент представляли Кармен Молу как реальную личность — женщину-профессора из Мадрида, мать троих детей, которая в свободное время пишет детективы. 
+        Создавался целый образ: публиковались поддельные интервью, на сайте издательства разместили фото женщины со спины, якобы Молы. Тайна раскрылась в 2021 году во время церемонии вручения престижной испанской литературной премии 
+        «Планета» за лучший роман. Авторам пришлось лично выйти на сцену и получить награду в размере миллиона евро за исторический триллер «Зверь». На церемонии присутствовал король Испании.
+    </font>
+
+    <br><br><br>
+
+    <font color="white" size="5">
+        <b>КНИГИ, О КОТОРЫХ РАССКАЗАНО НА САЙТЕ</b>
+    </font>
+
+    <br><br>
+
+    <table class="content-table" width="60%" cellpadding="10" cellspacing="5" bgcolor="#171717">
+        <tr>
+            <td align="left">
+                <font color="#D8D8D8" size="4">
+                    <ol>
+                        <li>
+                            <a href="#gypsy-bride">
+                                <font color="white">Цыганская невеста</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#PurSet">
+                                <font color="white">Пурпурная сеть</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#malutka">
+                                <font color="white">Малютка</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mama">
+                                <font color="white">Молчание матерей</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#klan">
+                                <font color="white">Клан</font>
+                            </a>
+                        </li>
+                    </ol>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br>
+
+    <table class="book-table" width="85%" border="2" cellpadding="15" cellspacing="5" bgcolor="#171717">
+        <tr>
+            <th colspan="3" bgcolor="#9E4A4A">
+                <font color="white" size="5">
+                    АВТОРЫ КАРМЕН МОЛА
+                </font>
+            </th>
+        </tr>
+
+        <tr>
+            <th width="35%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Имя автора</font>
+            </th>
+
+            <th width="25%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Дата рождения</font>
+            </th>
+
+            <th width="40%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Профессия</font>
+            </th>
+        </tr>
+
+        <tr>
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    Хорхе Диас
+                </font>
+            </td>
+
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    1962 год
+                </font>
+            </td>
+
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    Писатель, журналист, сценарист и режиссёр
+                </font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    Антонио Мерсеро
+                </font>
+            </td>
+
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    1969 год
+                </font>
+            </td>
+
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    Писатель, журналист и сценарист
+                </font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    Агустин Мартинес
+                </font>
+            </td>
+
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    1975 год
+                </font>
+            </td>
+
+            <td align="center" valign="middle">
+                <font color="#D8D8D8" size="4">
+                    Писатель, сценарист, создатель и шоураннер
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br><br>
+
+    <a name="gypsy-bride"></a>
+
+    <table class="book-section" width="80%" cellpadding="25">
+        <tr>
+            <td align="left" valign="top">
+                <img class="book-cover" src="цыганская невеста.jpg" width="350" align="left" hspace="20" vspace="5" alt="Цыганская невеста">
+
+                <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Муха" class="fly fly-2"></a>
+                <font color="white" size="7">
+                    <b>Цыганская невеста</b>
+                </font>
+
+                <br><br>
+
+                <font class="book-text" color="#D8D8D8" size="5">
+                    «Цыганская невеста. Инспектор полиции Элена Бланко. Книга I» — детективный триллер 
+                    о двойном преступлении, которое ставит под сомнение старый приговор и втягивает полицию
+                    в мир чужих семейных правил, страха и молчания. Кармен Мола открывает этой книгой цикл об 
+                    инспекторе полиции Элене Бланко и сразу задаёт жёсткий ритм: современный Мадрид здесь 
+                    соседствует с закрытым цыганским кланом, а частная трагедия быстро становится делом с 
+                    опасными ответвлениями. В центре не только поиск преступника, но и столкновение традиций 
+                    с личной свободой, давление семьи и цена ошибок, которые не остаются в прошлом. На этом фоне
+                    сама Элена — не кабинетный следователь, а человек с тяжёлым личным грузом, резкими привычками и
+                    цепким взглядом на то, что другие предпочли бы не замечать.
+                    Накануне свадьбы убивают Сусану Макайя. Способ преступления почти дословно повторяет смерть её 
+                    старшей сестры Лары, погибшей семь лет назад при тех же обстоятельствах. Проблема в том, что за убийство 
+                    Лары уже осуждён человек, который отбывает пожизненный срок. Поэтому расследование превращается не только 
+                    в поиск нового преступника, но и в проверку старого дела. Следственная группа заново поднимает материалы, 
+                    сопоставляет детали двух преступлений и разбирает связи внутри семьи Макайя. Под подозрением оказываются близкие, 
+                    знакомые, люди из окружения клана. Чем дальше продвигается следствие, тем яснее становится: за внешней сплочённостью 
+                    семьи скрываются конфликты, давление традиций и вещи, о которых здесь не принято говорить вслух.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <font class="book-text" color="#D8D8D8" size="5">
+        Купить книгу можно по ссылке:
+        <a href="https://www.chitai-gorod.ru/product/cyganskaya-nevesta-inspektor-policii-elena-blanko-kniga-i-3019746" target="_blank">
+            <font class="accent-link" color="#E5A0A0">Читай-город</font>
+        </a>
+    </font>
+
+    <br><br>
+
+    <font color="white" size="5">
+        <b>ОТЗЫВЫ</b>
+    </font>
+    <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Муха" class="fly fly-3"></a>
+
+    <br><br>
+
+    <table class="review-table" width="90%" cellpadding="20" cellspacing="15">
+        <tr>
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Юлия</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Это было шокирующе и по новому, никогда подобного не читала, 
+                    это лучший детектив из всего, что я читала за последние годы. 
+                    Интрига держит в напряжении с самой первой страницы, до последнего 
+                    не понимаешь, где правда, где ложь. Жестокость шокирует и от этого 
+                    интерес растет еще больше, что же еще авторы для нас приготовили. 
+                    Кстати, удивило, что под таким казалось бы женским псевдонимом, пишут несколько мужчин.
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Светлана</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Сначала показалась мне немного скучной и долго раскачивалась, но потом 
+                    я втянулась. История довольно мрачная и местами жёсткая, некоторые моменты 
+                    было неприятно читать. При этом мне понравилось само расследование, постоянно
+                    хотелось понять, что же произошло и кто во всём этом виноват. В целом хороший
+                    детектив, и после первой книги захотелось узнать, что будет дальше с героями.
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Анастасия</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    К прочтению советую. Из плюсов: Интересный сюжет.
+                    Динамичное повествование.
+                    Неожиданные повороты.
+                    Оригинальные нотки.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br><br>
+
+    <a name="PurSet"></a>
+
+    <table class="book-section" width="80%" cellpadding="25">
+        <tr>
+            <td align="left" valign="top">
+                <img class="book-cover" src="пурпурная сеть.jpg" width="350" align="left" hspace="20" vspace="5" alt="Пурпурная сеть">
+
+                <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Муха" class="fly fly-4"></a>
+                <font color="white" size="7">
+                    <b>Пурпурная сеть</b>
+                </font>
+
+                <br><br>
+
+                <font class="book-text" color="#D8D8D8" size="5">
+                    «Пурпурная сеть» – вторая книга о расследованиях инспектора полиции Мадрида 
+                    Элены Бланко. После того, как в «Цыганской невесте» Элена нападает на след 
+                    преступной группировки «Пурпурная сеть», в новой книге она продолжает разбираться
+                    в этом непростом деле. Но почему оно настолько важно для нее, не догадывается даже
+                    никто из ее коллег. Именно «Пурпурная Сеть» когда-то похитила ее сына Лукаса и, 
+                    вероятно, втянула в жестокие пытки и убийства. Роман начинается с визита нескольких 
+                    полицейских шестнадцатилетнего Даниэля, которые застают его за просмотром «реалити-шоу»,
+                    где жестоко истязают девушку. Их попытки определить, откуда ведется трансляция, не 
+                    приводят к успеху, в итоге девушка умирает. Возможно, один из убийц на экране и есть
+                    сын Элены. Удастся ли Элене Бланко остановить группировку и вернуть собственного сына?
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <font class="book-text" color="#D8D8D8" size="5">
+        Купить книгу можно по ссылке:
+        <a href="https://www.chitai-gorod.ru/product/purpurnaya-set-inspektor-policii-elena-blanko-kniga-ii-3037700" target="_blank">
+            <font class="accent-link" color="#E5A0A0">Читай-город</font>
+        </a>
+    </font>
+
+    <br><br>
+
+    <font color="white" size="5"><b>ОТЗЫВЫ</b></font>
+
+    <br><br>
+
+    <table class="review-table" width="90%" cellpadding="20" cellspacing="15">
+        <tr>
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Мира</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Просто гениальная история. Читала и не могла оторваться. 
+                    Вторая часть цикла порадовала. Сюжет интригующий, очень 
+                    много внезапных сюжетных поворотов. То как работает ОКА и 
+                    Элена это просто сногсшибательно. В этой части авторы показывают
+                    нам, насколько сильная связь между матерью и ребенком. Обожаю 
+                    слог авторов, читается на одном дыхании. Все очень советую этот цикл.
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Анастасия</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Отличная книга, но ужасная история, которая, к сожалению, актуальна и на сегодняшний день.
+                    В целом «Пурпурная сеть» — книга для тех, кто любит жёсткие, атмосферные триллеры с неожиданными
+                    поворотами и мрачной психологической составляющей. Не самая лёгкая история, но если хочется чего-то
+                    действительно напряжённого — рекомендую.
+                    От финала я была в шоке, хоть и ожидала подобное
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Алина</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Здесь у нас неплохой детектив, в котором процесс расследования показан доступно, 
+                    понятно и сам по себе логичен. Меня это порадовало, потому что не люблю детективы 
+                    где ничего не ясно и половина вещей не стыкуется или их происхождение вообще не раскрыто.
+                    Однако порой трудно читать сцены особой жестокости. Книжка не для слабонервных.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br><br>
+
+    <a name="malutka"></a>
+
+    <table class="book-section" width="80%" cellpadding="25">
+        <tr>
+            <td align="left" valign="top">
+                <img class="book-cover" src="малютка.jpg" width="350" align="left" hspace="20" vspace="5" alt="Малютка">
+
+                <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Муха" class="fly fly-5"></a>
+                <font color="white" size="7">
+                    <b>Малютка</b>
+                </font>
+
+                <br><br>
+
+                <font class="book-text" color="#D8D8D8" size="5">
+                    «Малютка» — криминальный триллер о возвращении к делу, от которого уже пытались уйти,
+                    и о цене чужих тайн. После событий, связанных с «Пурпурной сетью», в жизни Элены Бланко
+                    остаются утрата, надлом и попытка начать всё заново вдали от полиции. Кармен Мола ведёт
+                    историю между Мадридом и суровой сельской Испанией, где рядом существуют полицейская рутина,
+                    закрытые сообщества и насилие, которое долго прячут за обычным бытом. Личное напряжение
+                    героев здесь тесно связано с новым расследованием.
+                    В канун китайского Нового года похищают Ческу Ольмо, коллегу и подругу Элены, которая 
+                    заняла её место в отделе криминалистической аналитики. Ради поисков Элена возвращается 
+                    к работе и снова собирает команду, чтобы понять, кто стоит за похищением и почему удар 
+                    пришёлся именно по Ческе. Следствие быстро уводит не только в полицейские архивы, но и в
+                    прошлое самой пропавшей, где слишком много недосказанного. Параллельно возникает линия испанских 
+                    фермеров Антона и Хулио, связывающая расследование с темами бедности, уязвимости и жестокости в замкнутой среде.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <font class="book-text" color="#D8D8D8" size="5">
+        Купить книгу можно по ссылке:
+        <a href="https://www.chitai-gorod.ru/product/malyutka-3076951" target="_blank">
+            <font class="accent-link" color="#E5A0A0">Читай-город</font>
+        </a>
+    </font>
+
+    <br><br>
+
+    <font color="white" size="5"><b>ОТЗЫВЫ</b></font>
+
+    <br><br>
+
+    <table class="review-table" width="90%" cellpadding="20" cellspacing="15">
+        <tr>
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Ева</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Книги этого автора очень интересные и захватывающие. 
+                    Сюжет динамичный, запоминающийся. Заставляет переживать за героев книги и в какой-то 
+                    момент сочувствовать. Для любителей детективов и острых сюжетов - хорошая история) 
+                    Мне очень зашло. Читается очень легко, прямо на одном дыхании. За 2-3 дня прочесть не 
+                    составит труда. Абсолютно не пожалела, что когда-то купила первую часть и начала знакомство с циклом про инспектора Элену)
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Александр</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Очень смешанные чувства оставила третья часть цикла. 
+                    С одной стороны, сюжет действительно захватывает и держит в напряжении, книгу 
+                    просто невозможно отложить в сторону, пока не узнаешь, что будет дальше. С другой стороны, 
+                    книга наполнена таким количеством всевозможной «чернухи», что морально сложно справиться с эмоциями! 
+                    Местами глаза на лоб лезли от того, что происходило на страницах, особенно в конце. Читать с большой осторожностью!
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Мария</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Третья часть вышла очень мрачной. Авторам до конца книги удалось 
+                    продержать напряжение. Очень интересной, но очень много сцен жестокости 
+                    и насилия, достаточно детально описанных в книге, что прям аж до мурашек. 
+                    Расследование очень динамичное, много тайн открывается, хотя я до последнего надеялась 
+                    на хороший конец. Но все равно, рекомендую, скучно не будет
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br><br>
+
+    <a name="mama"></a>
+
+    <table class="book-section" width="80%" cellpadding="25">
+        <tr>
+            <td align="left" valign="top">
+                <img class="book-cover" src="молчание матерей.jpg" width="350" align="left" hspace="20" vspace="5" alt="Молчание матерей">
+
+                <font color="white" size="7">
+                    <b>Молчание матерей</b>
+                </font>
+
+                <br><br>
+
+                <font class="book-text" color="#D8D8D8" size="5">
+                    «Молчание матерей. Книга 4.» — криминальный триллер о расследовании серии жестоких убийств,
+                    где тела мужчин превращены в пугающие улики, а за каждым шагом следствия тянется тема материнства,
+                    боли и насилия. В книге Кармен Мола, коллективного псевдонима трёх испанских авторов, дело специального
+                    полицейского отдела быстро выходит за пределы обычной служебной работы. Мадрид и Ла-Корунья становятся пространством, 
+                    где преступление связано не только с частной трагедией, но и с системой, умеющей хранить молчание. Это четвёртая книга цикла 
+                    об Элене Бланко, и здесь личная уязвимость героев сталкивается с холодной логикой власти, торговли людьми и внутреннего разложения институтов,
+                    которые должны защищать.
+                    За несколько дней полиция находит в Мадриде и Ла-Корунье двух убитых мужчин с одинаково чудовищной деталью: в живот каждого зашит плод, а анализ 
+                    ДНК подтверждает отцовство погибших. Элена Бланко и её команда берутся за дело, которое с самого начала не похоже на обычную серию убийств. 
+                    Поиск виновных ведёт следователей через ложные версии, служебные конфликты и связи, уходящие к верхним этажам власти. Параллельно развивается история 
+                    Виолетты, молодой мексиканки, которую обманом вывозят в Испанию и втягивают в систему сексуального рабства.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <font class="book-text" color="#D8D8D8" size="5">
+        Купить книгу можно по ссылке:
+        <a href="https://www.chitai-gorod.ru/product/molcanie-materej-3098396" target="_blank">
+            <font class="accent-link" color="#E5A0A0">Читай-город</font>
+        </a>
+    </font>
+
+    <br><br>
+
+    <font color="white" size="5"><b>ОТЗЫВЫ</b></font>
+
+    <br><br>
+
+    <table class="review-table" width="90%" cellpadding="20" cellspacing="15">
+        <tr>
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Антон</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    после предыдущих трех книг данного цикла, я понял, что авторы уже начали сдавать позиции и прошлые книги была читать намного интереснее, 
+                    так как сюжет был более динамичный, не было зацикленности на одном, также немного разочаровало, что очень много отсылок на следующую часть,
+                    буквально машут перед глазами, травят, а потрогать не дают, но при этом плюс, что не терпится после этого прочитать следующую часть
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Инна</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Очень ждала продолжение истории и не ошиблась,все также круто написано,но единственное,
+                    что почти сразу стало понятно,кто главные «злодей» в книге. Книга не такая жуткая,как предыдущие,
+                    но странное ощущение при прочтение было.
+                    Также очень интересно читать подвязку к следующей части. Сплетение любовной и детективно линии прекрасно,ничто не перекрывает друг друга.
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Кристина</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Жуткая, но невероятно интересная книга. Читала и предыдущие части, честно говоря, ради этой – настолько заинтриговала аннотация к книге. 
+                    В книге хорошо все: динамичный сюжет, интересное расследование, постоянное напряжение и неожиданные повороты. Мне нравится, что в книгах 
+                    прослеживаются и социальные вопросы. Например, в этой поднимаются вопросы суррогатного материнства, торговли людьми и миграция.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br><br>
+
+    <a name="klan"></a>
+
+    <table class="book-section" width="80%" cellpadding="25">
+        <tr>
+            <td align="left" valign="top">
+                <img class="book-cover" src="клан.jpg" width="350" align="left" hspace="20" vspace="5" alt="Клан">
+
+                <font color="white" size="7">
+                    <b>Клан</b>
+                </font>
+
+                <br><br>
+
+                <font class="book-text" color="#D8D8D8" size="5">
+                    «Клан» — криминальный триллер и роман нуар о противостоянии инспектора Элены Бланко и её отдела преступной сети, 
+                    проникшей в полицию, суды, политику и бизнес. Действие разворачивается в Мадриде, где расследование быстро выходит
+                    за пределы обычного дела и сталкивает следствие с закрытым сообществом людей, связанных властью, деньгами и насилием. 
+                    Кармен Мола ведёт историю в напряжённом ритме: служебные границы стираются, доверие внутри системы оказывается под вопросом,
+                    а любой шаг может обернуться ударом изнутри. К мадридской линии добавляются африканские маршруты нелегальной миграции, 
+                    торговля людьми и связи, которые тянутся далеко за пределы одного города.
+                    После серии жестоких преступлений следствие выходит на Клан — закрытое сообщество, где рядом оказываются уголовники, чиновники,
+                    военные, журналисты и сотрудники системы. Отдел пытается работать в условиях, когда любой шаг могут сорвать изнутри, а каждый новый
+                    след ведёт не к одному преступнику, а к целой структуре. Ситуацию обостряет обвинение в убийстве полицейского, из-за которого привычный
+                    порядок расследования ломается. Параллельно дело затрагивает личную боль Анхеля Сарате и события, связанные с Либерией, что придаёт 
+                    истории дополнительный масштаб.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <font class="book-text" color="#D8D8D8" size="5">
+        Купить книгу можно по ссылке:
+        <a href="https://www.chitai-gorod.ru/product/klan-3138753" target="_blank">
+            <font class="accent-link" color="#E5A0A0">Читай-город</font>
+        </a>
+    </font>
+
+    <br><br>
+
+    <font color="white" size="5"><b>ОТЗЫВЫ</b></font>
+
+    <br><br>
+
+    <table class="review-table" width="90%" cellpadding="20" cellspacing="15">
+        <tr>
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Ангелина</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Кармен Мола это мое разочарование. Главные герои которые работают в СУПЕР крутом тайном отделе полиции и расследуют загадочные
+                    и страшные дела ведут себя как подростки. И читается не как книга , а как будто кто то сюжет фильма переписал просто. Язык очень
+                    сухой и когда читаешь погружения как такого нет и не возникает сопереживания к ситуациям вообще. всем советую
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Валерия</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Заключительная книга в цикле об инспекторе Элене Бланко, вообще все 4 предшествующие книги произвели на меня впечатление.
+                    Для любителей детективов с жуткими и ужасающими описаниями преступлений самое то. Но, к сожалению, заключительная часть 
+                    цикла показалась мне довольно скучной, по сравнению с остальными
+                    Финал меня убивает, так как хотелось все таки, чтобы Элена обрела счастье, но в итоге у нее забирают все, что имело для нее смысл
+                </font>
+            </td>
+
+            <td width="33%" class="review-card" bgcolor="#171717" align="center" valign="top">
+                <font color="white" size="4"><b>Елена</b></font>
+                <br><br>
+                <font class="rating" color="#B04A9A" size="5">★ ★ ★ ★ ★</font>
+                <br><br>
+                <font color="#D8D8D8" size="3">
+                    Как жалко, что это последняя книга этой шикарной серии! Я с удовольствием читала все пять книг серии, наслаждаясь ну 
+                    буквально каждой строчкой! Пятая книга ни в чем не уступает предыдущим. Все на таком же высоком уровне. Жестокие сцены,
+                    отвратительные персонажи, принципиальные главные герои. Авторы никого не жалеют. Ни своих героев, ни читателей. Бедная Элены Бланко, 
+                    сколько ей пришлось пережить...
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+<br><br><br><br>
+
+    <a name="books"></a>
+
+    <font color="white" size="6">
+        <b>КНИГИ ЦИКЛА «ИНСПЕКТОР ЕЛЕНА БЛАНКО»</b>
+        <a href="#navigation" class="fly-link" title="В начало страницы"><img src="Муха.png" alt="Муха" class="fly fly-6"></a>
+    </font>
+
+    <br><br>
+
+    <table class="book-table" width="95%" border="2" cellpadding="15" cellspacing="5" bgcolor="#171717">
+        <tr>
+            <th colspan="5" bgcolor="#9E4A4A">
+                <font color="white" size="5">
+                    ЦИКЛ «ИНСПЕКТОР ЕЛЕНА БЛАНКО»
+                </font>
+            </th>
+        </tr>
+
+        <tr>
+            <th width="8%" bgcolor="#9E4A4A">
+                <font color="white" size="4">№</font>
+            </th>
+
+            <th width="22%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Название книги</font>
+            </th>
+
+            <th width="12%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Год выхода</font>
+            </th>
+
+            <th width="43%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Краткое описание сюжета</font>
+            </th>
+
+            <th width="15%" bgcolor="#9E4A4A">
+                <font color="white" size="4">Оценка пользователей</font>
+            </th>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <font color="#D8D8D8" size="4">1</font>
+            </td>
+
+            <td align="center">
+                <font color="white" size="4"><b>Цыганская невеста</b></font>
+            </td>
+
+            <td align="center">
+                <font color="#D8D8D8" size="4">2018</font>
+            </td>
+
+            <td align="left">
+                <font color="#D8D8D8" size="3">
+                    Первое расследование инспектора Елены Бланко.
+                </font>
+            </td>
+
+            <td align="center">
+                <font class="rating" color="#B04A9A" size="4">★ ★ ★ ★ ★</font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <font color="#D8D8D8" size="4">2</font>
+            </td>
+
+            <td align="center">
+                <font color="white" size="4"><b>Пурпурная сеть</b></font>
+            </td>
+
+            <td align="center">
+                <font color="#D8D8D8" size="4">2019</font>
+            </td>
+
+            <td align="left">
+                <font color="#D8D8D8" size="3">
+                    Продолжение расследования преступной группировки «Пурпурная сеть».
+                </font>
+            </td>
+
+            <td align="center">
+                <font class="rating" color="#B04A9A" size="4">★ ★ ★ ★ ☆</font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <font color="#D8D8D8" size="4">3</font>
+            </td>
+
+            <td align="center">
+                <font color="white" size="4"><b>Малютка</b></font>
+            </td>
+
+            <td align="center">
+                <font color="#D8D8D8" size="4">2020</font>
+            </td>
+
+            <td align="left">
+                <font color="#D8D8D8" size="3">
+                    Елена Бланко возвращается к работе после событий предыдущей книги.
+                </font>
+            </td>
+
+            <td align="center">
+                <font class="rating" color="#B04A9A" size="4">★ ★ ★ ★ ☆</font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <font color="#D8D8D8" size="4">4</font>
+            </td>
+
+            <td align="center">
+                <font color="white" size="4"><b>Молчание матерей</b></font>
+            </td>
+
+            <td align="center">
+                <font color="#D8D8D8" size="4">2022</font>
+            </td>
+
+            <td align="left">
+                <font color="#D8D8D8" size="3">
+                    Новое расследование приводит команду Элены Бланко к серии связанных преступлений.
+                </font>
+            </td>
+
+            <td align="center">
+                <font class="rating" color="#B04A9A" size="4">★ ★ ★ ★ ☆</font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <font color="#D8D8D8" size="4">5</font>
+            </td>
+
+            <td align="center">
+                <font color="white" size="4"><b>Клан</b></font>
+            </td>
+
+            <td align="center">
+                <font color="#D8D8D8" size="4">2024</font>
+            </td>
+
+            <td align="left">
+                <font color="#D8D8D8" size="3">
+                    Элена Бланко сталкивается с могущественной преступной организацией.
+                </font>
+            </td>
+
+            <td align="center">
+                <font class="rating" color="#B04A9A" size="4">★ ★ ★ ★ ★</font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+
+    <br><br><br><br>
+
+    <a name="authorization"></a>
+
+    <font color="white" size="6">
+        <b>АВТОРИЗАЦИЯ</b>
+    </font>
+
+    <br><br>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <font color="#D8D8D8" size="4">
+            <b>Выберите действие:</b>
+        </font>
+
+        <br><br>
+
+        <input type="radio" name="action" value="login" checked>
+        <font color="white" size="4">Вход</font>
+
+        <input type="radio" name="action" value="registration">
+        <font color="white" size="4">Регистрация</font>
+
+        <br><br><br>
+
+        <table class="form-table" width="70%" cellpadding="15" cellspacing="5" bgcolor="#171717" border="2">
+            <tr>
+                <td colspan="2" class="form-title" bgcolor="#9E4A4A" align="center">
+                    <font color="white" size="5"><b>Вход на сайт</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="35%"><font color="white" size="4">Логин:</font></td>
+                <td><input type="text" name="login" size="40"></td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Пароль:</font></td>
+                <td><input type="password" name="password" size="40"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="ВОЙТИ">
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table class="form-table" width="70%" cellpadding="15" cellspacing="5" bgcolor="#171717" border="2">
+            <tr>
+                <td colspan="2" class="form-title" bgcolor="#9E4A4A" align="center">
+                    <font color="white" size="5"><b>Регистрация</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="35%"><font color="white" size="4">Логин:</font></td>
+                <td><input type="text" name="registration_login" size="40"></td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Имя пользователя:</font></td>
+                <td><input type="text" name="username" size="40"></td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Любимая книга:</font></td>
+                <td>
+                    <select name="favorite_book">
+                        <option value="gypsy_bride">Цыганская невеста</option>
+                        <option value="purple_net">Пурпурная сеть</option>
+                        <option value="malutka">Малютка</option>
+                        <option value="mothers_silence">Молчание матерей</option>
+                        <option value="klan">Клан</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Прочитанные книги:</font></td>
+                <td>
+                    <select name="read_books" size="5" multiple>
+                        <option value="gypsy_bride">Цыганская невеста</option>
+                        <option value="purple_net">Пурпурная сеть</option>
+                        <option value="malutka">Малютка</option>
+                        <option value="mothers_silence">Молчание матерей</option>
+                        <option value="klan">Клан</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Пол:</font></td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked>
+                    <font color="white" size="4">Мужской</font>
+                    <br>
+                    <input type="radio" name="gender" value="female">
+                    <font color="white" size="4">Женский</font>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Пароль:</font></td>
+                <td><input type="password" name="registration_password" size="40"></td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Подтвердите пароль:</font></td>
+                <td><input type="password" name="password_confirm" size="40"></td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">О себе:</font></td>
+                <td><textarea name="about" rows="6" cols="45"></textarea></td>
+            </tr>
+            <tr>
+                <td><font color="white" size="4">Фото профиля:</font></td>
+                <td><input type="file" name="profile_photo"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="agreement" value="yes">
+                    <font color="white" size="4">Согласен с правилами сайта</font>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+                    <input type="reset" value="ОЧИСТИТЬ">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <br><br>
+<br><br>
+
+
+        </td>
+    <tr>
+        <td colspan="2" bgcolor="#171717" align="center" valign="middle" height="80">
+            <font color="#D8D8D8" size="3">
+                Информационный сайт о книгах Кармен Молы
+            </font>
+            <br><br>
+</td>
+    </tr>
+
+</table>
+
+</body>
+            </div>
+
+		   
+        </td>
+        <td id="characters" width="230" valign="top">
+            <div class="scroll-column">
+           <head>
+    <meta charset="UTF-8">
+    <title>Персонажи — Книги Кармен Мола</title>
+</head>
+
+<body bgcolor="#171717" text="white">
+
+<center>
+
+    <font color="white" size="5">
+        <b>ПЕРСОНАЖИ</b>
+    </font>
+
+    <br><br>
+
+    <table class="characters-table" width="90%" cellpadding="12" cellspacing="0" bgcolor="#111111">
+        <tr>
+            <td align="left">
+                <font size="3">
+                    <font color="#E5A0A0"><b>Элена Бланко</b></font> — главный инспектор, руководитель Бригады анализа случаев ОКА
+                    <br><br>
+
+                    <font color="#E5A0A0"><b>Анхель Сарате</b></font> — субинспектор полиции, присоединившийся к команде
+                    <br><br>
+
+                    <font color="#E5A0A0"><b>Марияхо</b></font> — специалист по информатике и хакер
+                    <br><br>
+
+                    <font color="#E5A0A0"><b>Ческа</b></font> — полицейская, специалист по расследованиям, «perro de presa» ОКА
+                    <br><br>
+
+                    <font color="#E5A0A0"><b>Радриго Ордуньо</b></font> — полицейский, ветеран, бывший сотрудник GEO
+                    <br><br>
+
+                    <font color="#E5A0A0"><b>Буэндия</b></font> — судебный медицинский эксперт ОКА
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table width="90%" cellpadding="12" cellspacing="3" bgcolor="#111111">
+        <tr>
+            <td align="center" bgcolor="#9E4A4A">
+                <font color="white" size="4"><b>О ПЕРСОНАЖАХ</b></font>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top">
+                <font color="#D8D8D8" size="3">
+                    Команда Отдела криминалистической аналитики инспектора Елены Бланко из цикла книг Кармен Молы.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    <a href="#navigation" class="fly-link" title="Вернуться к навигации">
+        <img src="Муха.png" alt="Вернуться к навигации" class="fly fly-6">
+    </a>
+
+</center>
+
+</body>
+            </div>
+
+		   
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
